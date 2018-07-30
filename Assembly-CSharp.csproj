@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BombSpawn.cs" />
      <Compile Include="Assets\Killzone.cs" />
      <Compile Include="Assets\PlayerMovement.cs" />
  <Reference Include="UnityEngine.UI">
