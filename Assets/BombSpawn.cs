@@ -5,10 +5,10 @@ using UnityEngine;
 public class BombSpawn : MonoBehaviour {
 
 	public float speed = 1;
+	private float minSpeed = 0.2f;
     private float Timer;
     private float speedUp = .01f;
     public GameObject bomb;
-    GameObject bombClone;
  
     void Start () 
     {
@@ -19,9 +19,19 @@ public class BombSpawn : MonoBehaviour {
     {
         Timer -= Time.deltaTime;
         if (Timer <= 0){
-        	bombClone = Instantiate (bomb,(new Vector3 ((Random.Range (-1, 2)), 2, 0)), transform.rotation )  as GameObject;
-            Timer = speed - speedUp;
-            speed = Timer;
+        	int randomPos = Random.Range (0, 3);
+        	if (randomPos == 1){
+        		randomPos = -2;
+        	}
+    		GameObject bombClone;
+        	bombClone = Instantiate (bomb,(new Vector3 (randomPos, 2, 0)), transform.rotation) as GameObject;
+        	if (speed - speedUp < minSpeed ){
+            	Timer = minSpeed;
+        	}
+        	else {
+        		Timer = speed - speedUp;
+        	}
+        	speed = Timer;
         }
     }
 }

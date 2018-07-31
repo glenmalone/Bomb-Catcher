@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
+
 	[SerializeField] private float distanceToMove;
 	[SerializeField] private float moveSpeed;
 	private bool moveToPoint = false;
 	private Vector3 endPosition;
+    private int score;
+
 	void Start () {
+        score = 0;
     	endPosition = transform.position;
     }
   
@@ -53,6 +57,7 @@ public class PlayerMovement : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D coll) {
         if (coll.gameObject.tag == "Bomb"){
             Destroy(coll.gameObject);
+            score++;
        }
     }
 }

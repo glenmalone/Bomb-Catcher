@@ -29,7 +29,7 @@ public class Killzone : MonoBehaviour {
 		}
 		else if (health == 0){
 			spriteRenderer.sprite = zeroHealth;
-			Destroy(GameObject.Find("Bomb(Clone)"));
+			//Destroy(GameObject.Find("Bomb(Clone)"));
 			Destroy(bombSpawner);
 		}
 	}
