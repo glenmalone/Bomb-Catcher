@@ -48,7 +48,9 @@
   <ItemGroup>
      <Compile Include="Assets\BombSpawn.cs" />
      <Compile Include="Assets\Killzone.cs" />
+     <Compile Include="Assets\Numbers.cs" />
      <Compile Include="Assets\PlayerMovement.cs" />
+     <Compile Include="Assets\ScoreManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

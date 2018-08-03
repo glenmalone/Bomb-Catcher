@@ -1,10 +1,16 @@
 fileFormatVersion: 2
 guid: 56f03e5eeca20744c88f4a369c33b422
-timeCreated: 1532961250
+timeCreated: 1533299975
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - bombSpawner: {instanceID: 0}
+  - fourHealth: {fileID: 21300000, guid: 2b831b7a8c15f554ab5de0db14bc6327, type: 3}
+  - threeHealth: {fileID: 21300000, guid: 5ce1ba11868fa6c43aefb3c7a2b7cb91, type: 3}
+  - twoHealth: {fileID: 21300000, guid: 07e9a96a9fd015f4cbb64434aaa5b1c4, type: 3}
+  - oneHealth: {fileID: 21300000, guid: 8af9a5c4f8d987e4b9137d2f2268a94b, type: 3}
+  - zeroHealth: {fileID: 21300000, guid: 9251ac3bc620bb246bcb2ba48e2fbf7b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

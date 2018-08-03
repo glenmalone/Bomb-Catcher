@@ -7,7 +7,7 @@ public class BombSpawn : MonoBehaviour {
 	public float speed = 1;
 	private float minSpeed = 0.2f;
     private float Timer;
-    private float speedUp = .01f;
+    private float speedUp = .007f;
     public GameObject bomb;
  
     void Start () 
